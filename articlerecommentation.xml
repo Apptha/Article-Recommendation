@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Apptha - Article Recommendation</name>
+	<author>Apptha</author>
+	<creationDate>Feb 18 2012</creationDate>
+	<copyright>Copyright (C) 2012</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>support@apptha.com</authorEmail>
+	<authorUrl>www.apptha.com</authorUrl>
+	<version>1.0</version>
+            <description>
+                <![CDATA[&nbsp;&nbsp;<p style="font-style:normal;font-size:13px;font-weight:normal; margin-left:10px;">
+                <a href="http://www.apptha.com" target="_blank" >
+                <img style='margin-right:10px;background-color:#D91928' src="http://www.apptha.com/images/aaptha-logo.png" alt="Apptha Article Recommendation Plugin" align="left" />
+                </a> 
+                <span style='padding-left:10px'>Article Recommendation Plugin version 1.0 for Joomla compatible with 1.5 ,1.6 ,1.7 & 2.5 you can show next article to visitors (article readers) in recommended box. It helps visitors to know about next article. The recommended box will be displayed when the visitor reaches end of article.</span>
+
+                </p>]]>
+            </description>
+	<files>
+		<filename plugin="articlerecommentation">articlerecommentation.php</filename>
+                <folder>articleincludes</folder>
+	</files>
+        <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="fblike" type="list"
+					default="1" siz="20"
+					description="Enable Facebook like button"
+					label="Facebook like button"
+				>
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+                                <field name="twitter" type="list"
+					default="1"
+					description="Enable twitter share button"
+					label="Twitter share button"
+				>
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+                                <field name="direction" type="list"
+					default="0"
+					description="Popup direction"
+					label="Article window position"
+				>
+					<option value="0">Bottom-Right</option>
+					<option value="1">Bottom-Left</option>
+                                        <option value="2">Top-Right</option>
+
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+        <params>
+		<param name="fblike" type="radio" default="1" label="Facebook like button" description="Enable for facebook like">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+                <param name="twitter" type="radio" default="1" label="Twitter share button" description="Enable for twitter share">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+                <param name="direction" type="list" default="1" label="Article window position" description="Article window position">
+			<option value="0">Bottom-Right</option>
+                        <option value="1">Bottom-Left</option>
+                        <option value="2">Top-Right</option>
+		</param>
+	</params>
+</install>
